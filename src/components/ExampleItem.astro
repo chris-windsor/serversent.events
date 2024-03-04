@@ -65,6 +65,9 @@ const codeSections = code.split("&").map((section) => {
       runButton?.addEventListener("click", () => {
         window.ACTIVE_EVENT_SOURCE?.close();
 
+        if (!exampleOutput) return;
+        exampleOutput.innerHTML = "";
+
         if (exampleOutputHeader) {
           exampleOutputHeader.innerHTML = "waiting for first message...";
         }
@@ -76,8 +79,6 @@ const codeSections = code.split("&").map((section) => {
           if (exampleOutputHeader) {
             exampleOutputHeader.innerHTML = "streaming...";
           }
-
-          if (!exampleOutput) return;
 
           exampleOutput.textContent = JSON.stringify(
             JSON.parse(message.data),

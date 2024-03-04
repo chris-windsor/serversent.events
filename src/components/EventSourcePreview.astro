@@ -3,7 +3,7 @@ import PlayIcon from "../components/icons/Play.astro";
 ---
 
 <aside
-  class="sticky top-[250px] max-h-64 w-1/2 right-6 bg-black text-white p-4 rounded-lg font-mono shadow-md"
+  class="fixed bottom-2 left-2 right-2 md:sticky md:top-[250px] md:right-6 h-fit max-h-80 md:w-1/2 bg-black text-white p-4 rounded-lg font-mono shadow-md"
 >
   <div class="flex justify-between items-center">
     <div class="flex space-x-2 text-red-500">
@@ -18,7 +18,7 @@ import PlayIcon from "../components/icons/Play.astro";
       <span>&rarr;</span>
       <span id="example-header">hit <PlayIcon /> on an example to try it!</span>
     </p>
-    <p class="text-white" id="example-message">
+    <p class="min-h-[150px] overflow-y-auto text-white" id="example-message">
       <!-- streamed event messages are injected here -->
     </p>
   </div>

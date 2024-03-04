@@ -5,11 +5,11 @@ import { Image } from "astro:assets";
 ---
 
 <Layout title="serversent.events">
-  <div class="bg-zinc-900 min-h-screen">
+  <div class="bg-zinc-900 h-screen">
     <Image
       src={landingImage}
       alt="background image"
-      class="fixed inset-0 rounded-lg mix-blend-lighten min-h-full min-w-full object-cover"
+      class="fixed mix-blend-lighten h-full w-full object-cover"
     />
     <div class="py-24 sm:py-32 lg:pb-40">
       <div class="mx-auto max-w-7xl p-6 lg:px-8">
@@ -21,21 +21,21 @@ import { Image } from "astro:assets";
               serversent.events
             </h1>
             <p class="mt-4 text-2xl leading-8 text-gray-400">
-              rapid 🏎️ prototyping tool 🧪 for SSE
+              rapid prototyping tool for SSE
             </p>
-            <div
-              class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
-            >
+            <div class="mt-10 flex items-center gap-x-6 justify-start">
               <a
                 href="/examples"
                 class="rounded-md bg-gray-200 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >See Examples</a
               >
+                See Examples
+              </a>
               <a
                 href="mailto:hello@chriswindsor.dev"
                 class="text-sm font-semibold leading-6 text-white"
-                >Submit feedback <span aria-hidden="true">→</span></a
               >
+                Submit feedback<span aria-hidden="true">&nbsp;&rarr;</span>
+              </a>
             </div>
           </div>
         </div>
